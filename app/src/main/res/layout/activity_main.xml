@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount" />
+
+        <EditText
+            android:id="@+id/editInputAmt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Enter the amount"
+            android:textColor="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/textNumPax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Num of Pax" />
+
+        <EditText
+            android:id="@+id/editInoutNumPax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Enter the Num of Pax"
+            android:textColor="@android:color/darker_gray"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/tbSvs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:textOn="svs"
+            android:textOff="svs"/>
+
+        <ToggleButton
+            android:id="@+id/tbGst"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:textOn="gst"
+            android:textOff="gst"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discount(%)" />
+
+        <EditText
+            android:id="@+id/editInputDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Enter the discount"
+            android:textColor="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/textTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+        <TextView
+            android:id="@+id/textEach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/split"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="split" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="reset" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
